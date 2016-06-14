@@ -35,7 +35,7 @@ sub evaluate {
                     filename => $file,
                     line     => $token->{line},
                     description => sprintf(DESC, $token_data),
-                    explanation => sprintf(EXPL, $token_data),
+                    explanation => EXPL,
                     policy => __PACKAGE__,
                 };
             }
@@ -46,4 +46,3 @@ sub evaluate {
 }
 
 1;
-
